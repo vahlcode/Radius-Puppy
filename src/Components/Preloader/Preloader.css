@@ -1,0 +1,92 @@
+.preloader {
+    background: var(--background-color);
+    display: flex;
+    flex-flow: column wrap;
+    position: fixed;
+    top: 0;
+    right: 0;
+    height: 100vh;
+    width: 100vw;
+    transition: 1s;
+    transform: translateX(0);
+    z-index: 100;
+}
+
+.preloader .loader {
+    height: 70vh;
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.preloader .loader>.border {
+    height: 250px;
+    width: 250px;
+    border-top-left-radius: 759px;
+    border-top-right-radius: 454px;
+    border-bottom-right-radius: 932px;
+    border-bottom-left-radius: 636px;
+    background: var(--primary-color);
+    transition: .5s;
+    animation: spin 5s infinite linear;
+}
+
+.preloader .pattern {
+    height: 30vh;
+    width: 100vw;
+    background: url("./bg-pattern.svg");
+    background-position: left top;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+@media only screen and (min-width: 920px) {
+    .preloader {
+        background: var(--background-color);
+        display: flex;
+        flex-flow: flex nowrap;
+        position: fixed;
+        top: 0;
+        right: 0;
+        height: 100vh;
+        width: 100vw;
+        transition: 1s;
+        z-index: 100;
+    }
+    .preloader .loader {
+        height: 100vh;
+        width: 80vw;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .preloader .loader>.border {
+        height: 300px;
+        width: 300px;
+        border-top-left-radius: 759px;
+        border-top-right-radius: 454px;
+        border-bottom-right-radius: 932px;
+        border-bottom-left-radius: 636px;
+        background: var(--primary-color);
+        transition: .5s;
+        animation: spin 5s infinite linear;
+    }
+    .preloader .pattern {
+        height: 100vh;
+        width: 20vw;
+        background: url("./bg-pattern.svg");
+        background-position: left top;
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+}
+
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}

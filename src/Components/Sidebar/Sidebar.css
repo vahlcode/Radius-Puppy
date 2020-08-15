@@ -1,0 +1,175 @@
+aside {
+    position: fixed;
+    top: 60vh;
+    right: 0;
+    height: 40vh;
+    width: var(--sidebars-width);
+    padding: 50px 30px 50px 30px;
+    background: var(--background-color-light);
+    z-index: 1;
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+
+aside .radius-slider {
+    width: 100%;
+    margin-bottom: 50px;
+}
+
+aside .input-group {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+aside .input-group:last-of-type {
+    margin-bottom: 0;
+}
+
+aside .input-group h6 {
+    font-size: 14px;
+    font-weight: 300;
+    margin-bottom: 10px;
+}
+
+aside .info {
+    display: inline-block;
+    font-size: 12px;
+    font-style: italic;
+    line-height: 20px;
+    letter-spacing: 0.05em;
+    font-weight: 300;
+    margin-bottom: 10px;
+}
+
+aside .input-group>input[type=range] {
+    -webkit-appearance: none;
+    width: 100%;
+    border-radius: 30px;
+}
+
+aside .input-group>input[type=range]:focus {
+    outline: none;
+}
+
+aside .input-group>input[type=range]::-webkit-slider-runnable-track {
+    width: 100%;
+    height: 8.4px;
+    cursor: pointer;
+    box-shadow: 0;
+    background: var(--primary-color);
+    border-radius: 30px;
+    border: none;
+}
+
+aside .input-group>input[type=range]::-webkit-slider-thumb {
+    box-shadow: none;
+    border: 4px solid #ffffff;
+    height: 20px;
+    width: 20px;
+    border-radius: 50%;
+    background: var(--primary-color);
+    cursor: pointer;
+    -webkit-appearance: none;
+    margin-top: -6px;
+    backdrop-filter: blur(20px);
+    opacity: 0.6;
+}
+
+aside .input-group>input[type=range]:focus::-webkit-slider-thumb {
+    backdrop-filter: blur(0);
+    opacity: 1;
+}
+
+aside .input-group>input[type=range]:focus::-webkit-slider-runnable-track {
+    background: var(--secondary-color);
+}
+
+aside .input-group>input[type=range]::-moz-range-track {
+    width: 100%;
+    height: 8.4px;
+    cursor: pointer;
+    box-shadow: 0;
+    background: var(--primary-color);
+    border-radius: 30px;
+    border: none;
+    z-index: 9;
+}
+
+aside .input-group>input[type=range]::-moz-range-thumb {
+    width: 100%;
+    height: 8.4px;
+    cursor: pointer;
+    box-shadow: 0;
+    background: var(--primary-color);
+    border-radius: 30px;
+    border: none;
+}
+
+aside .input-group>input[type=range]::-ms-track {
+    width: 100%;
+    height: 8.4px;
+    cursor: pointer;
+    background: transparent;
+    border-color: transparent;
+    border-width: 16px 0;
+    color: transparent;
+}
+
+aside .input-group>input[type=range]::-ms-fill-lower {
+    box-shadow: none;
+    border: 4px solid #ffffff;
+    height: 20px;
+    width: 20px;
+    border-radius: 50%;
+    background: var(--primary-color);
+    cursor: pointer;
+    -webkit-appearance: none;
+    margin-top: -14px;
+}
+
+aside .input-group>input[type=range]::-ms-fill-upper {
+    box-shadow: none;
+    border: 4px solid #ffffff;
+    height: 20px;
+    width: 20px;
+    border-radius: 50%;
+    background: var(--primary-color);
+    cursor: pointer;
+    -webkit-appearance: none;
+    margin-top: -14px;
+}
+
+aside .input-group>input[type=range]::-ms-thumb {
+    box-shadow: none;
+    border: 4px solid #ffffff;
+    height: 20px;
+    width: 20px;
+    border-radius: 50%;
+    background: var(--primary-color);
+    cursor: pointer;
+}
+
+aside .input-group>input[type=range]:focus::-ms-fill-lower {
+    background: var(--secondary-color);
+}
+
+aside .input-group>input[type=range]:focus::-ms-fill-upper {
+    background: var(--secondary-color);
+}
+
+@media only screen and (min-width: 920px) {
+    aside {
+        position: fixed;
+        top: 0;
+        right: 0;
+        height: 100vh;
+        width: var(--sidebars-width);
+        padding: 150px 30px 50px 30px;
+        background: var(--background-color-light);
+        z-index: 1;
+        overflow-x: hidden;
+        overflow-y: auto;
+    }
+}

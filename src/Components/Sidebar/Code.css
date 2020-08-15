@@ -1,0 +1,33 @@
+
+.code {
+    position: fixed;
+    top: 0;
+    right: 0;
+    height: 100vh;
+    width: var(--sidebars-width);
+    padding: 150px 20px 20px 20px;
+    background: var(--background-color-light-transparent);
+    backdrop-filter: blur(20px);
+    z-index: 4;
+    transition: .5s;
+}
+
+.code>pre{
+    white-space: pre-wrap !important;      
+    white-space: -moz-pre-wrap !important; 
+    white-space: -pre-wrap !important;     
+    white-space: -o-pre-wrap !important; 
+    word-wrap: break-word !important; 
+    word-break: break-all !important;
+    border-radius: 10px !important;
+}
+
+.code>pre::-webkit-scrollbar{
+    height: 4px;
+}
+
+.code>pre::-webkit-scrollbar-thumb{
+    height: 4px;
+    border-radius: 5px;
+    background: var(--primary-color);
+}

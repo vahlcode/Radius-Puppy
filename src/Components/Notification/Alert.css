@@ -1,0 +1,13 @@
+.alert{
+    background: #02c258;
+    color: rgb(255, 255, 255);
+    border-radius: 30px;
+    font-size: 14px;
+    letter-spacing: 0.05em;
+    position: fixed;
+    right: 50px;
+    bottom: 50px;
+    padding: 10px 40px;
+    transition: .8s;
+    z-index: 20;
+}

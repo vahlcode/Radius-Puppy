@@ -1,0 +1,20 @@
+main{
+    width: 100vw;
+    padding: 50px 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 60vh;
+    transition: 1s;
+}
+
+@media only screen and (min-width: 920px) {
+    main{
+        width: calc(100% - var(--sidebars-width));
+        padding: 150px 50px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 100vh;
+    }
+}

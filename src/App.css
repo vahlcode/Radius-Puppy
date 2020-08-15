@@ -1,0 +1,59 @@
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  outline: none;
+}
+
+:root{
+  --primary-color: #1673ff;
+  --secondary-color: #74acff;
+  --background-color: #020a18;
+  --background-color-light: #040e20;
+  --background-color-light-transparent: #040e2063;
+  --font-color: #ebeef1;
+  --heading-color: #afbed3;
+  --sidebars-width: 100%;
+  --app-height: 300px;
+  --app-width: 300px;
+  --app-background: #1673ff;
+  --border-top-left-radius: 100px;
+  --border-top-right-radius: 100px;
+  --border-bottom-right-radius: 100px;
+  --border-bottom-left-radius: 100px;
+  --primary-color-transparent: #1673ff5e;
+}
+
+.tool-tip{
+  position: fixed;
+  padding: 5px 8px;
+  background: var(--primary-color-transparent);
+  border-radius: 13px;
+  backdrop-filter: blur(10px);
+  font-size: 10px;
+  letter-spacing: 0.010em;
+  z-index: 3;
+  transition: .8s;
+  font-variant-numeric: diagonal-fractions;
+}
+
+@media only screen and (min-width: 920px) {
+  :root{
+    --primary-color: #1673ff;
+    --secondary-color: #74acff;
+    --background-color: #020a18;
+    --background-color-light: #040e20;
+    --background-color-light-transparent: #040e2063;
+    --font-color: #ebeef1;
+    --heading-color: #afbed3;
+    --sidebars-width: 300px;
+    --app-height: 300px;
+    --app-width: 300px;
+    --app-background: #1673ff;
+    --border-top-left-radius: 100px;
+    --border-top-right-radius: 100px;
+    --border-bottom-right-radius: 100px;
+    --border-bottom-left-radius: 100px;
+    --primary-color-transparent: #1673ff5e;
+  }
+}
