@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "/Radius-Puppy/precache-manifest.60c57cf5de969365c872dc80f69370be.js"
+  "/Radius-Puppy/precache-manifest.739e2f5c136c73e85c2426162490c659.js"
 );
 
 self.addEventListener('message', (event) => {
