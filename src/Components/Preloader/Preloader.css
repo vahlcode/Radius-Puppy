@@ -21,15 +21,13 @@
 }
 
 .preloader .loader>.border {
-    height: 250px;
-    width: 250px;
-    border-top-left-radius: 759px;
-    border-top-right-radius: 454px;
-    border-bottom-right-radius: 932px;
-    border-bottom-left-radius: 636px;
-    background: var(--primary-color);
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+    border-left: 2px solid var(--primary-color);
     transition: .5s;
-    animation: spin 5s infinite linear;
+    animation: spin 2s infinite linear;
+    margin-right: 20px;
 }
 
 .preloader .pattern {
@@ -62,15 +60,12 @@
         justify-content: center;
     }
     .preloader .loader>.border {
-        height: 300px;
-        width: 300px;
-        border-top-left-radius: 759px;
-        border-top-right-radius: 454px;
-        border-bottom-right-radius: 932px;
-        border-bottom-left-radius: 636px;
-        background: var(--primary-color);
+        height: 30px;
+        width: 30px;
+        border-radius: 50%;
+        border-left: 2px solid var(--primary-color);
         transition: .5s;
-        animation: spin 5s infinite linear;
+        animation: spin 2s infinite linear;
     }
     .preloader .pattern {
         height: 100vh;

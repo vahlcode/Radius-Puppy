@@ -1,0 +1,94 @@
+section.hero {
+    background: var(--background-color) url("./bg.svg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center top;
+    padding: 50px 20px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    height: 100vh;
+    width: 100vw;
+}
+
+section.hero h1 {
+    font-size: 25px;
+    margin-bottom: 50px;
+}
+
+section.hero .social-media {
+    font-size: 16px;
+    margin-top: 50px;
+}
+
+section.hero .social-media>span>.icon {
+    color: tomato;
+}
+
+section.hero .social-media>ul {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    flex-wrap: wrap;
+}
+
+section.hero .social-media>ul>li {
+    list-style: none;
+    color: white;
+    margin-right: 20px;
+}
+
+section.hero .social-media>ul>li:last-of-type {
+    margin-right: 0;
+}
+
+section.hero .social-media>ul>li>a {
+    text-decoration: none;
+    color: white;
+}
+
+@media only screen and (min-width: 920px) {
+    section.hero {
+        background: var(--background-color) url("./bg.svg");
+        background-size: cover;
+        background-repeat: no-repeat;
+        padding: 50px 70px;
+        text-align: center;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        justify-content: center;
+        height: 100vh;
+        width: 100vw;
+    }
+    section.hero h1 {
+        font-size: 55px;
+        margin-bottom: 50px;
+    }
+    section.hero .social-media {
+        font-size: 16px;
+        margin-top: 50px;
+    }
+    section.hero .social-media>span>.icon {
+        color: tomato;
+    }
+    section.hero .social-media>ul {
+        display: flex;
+        justify-content: center;
+        margin-top: 20px;
+    }
+    section.hero .social-media>ul>li {
+        list-style: none;
+        color: white;
+        margin-right: 20px;
+    }
+    section.hero .social-media>ul>li:last-of-type {
+        margin-right: 0;
+    }
+    section.hero .social-media>ul>li>a {
+        text-decoration: none;
+        color: white;
+    }
+}

@@ -1,11 +1,8 @@
 import React, { Component } from "react";
 import Button from "../Buttons/Button";
-import { PrismLight as SyntaxHighlighter } from 'react-syntax-highlighter';
-import css from 'react-syntax-highlighter/dist/esm/languages/prism/css';
-import dracula from 'react-syntax-highlighter/dist/esm/styles/prism/dracula';
-import "./Code.css"
-
-SyntaxHighlighter.registerLanguage('css', css);
+import Prism from "prismjs";
+import "prismjs/themes/prism.css"
+import "./Code.css";
 
 class Code extends Component {
     constructor(props) {
@@ -19,23 +16,30 @@ class Code extends Component {
         const GET_CODE = document.querySelector(".get-code");
 
         GET_CODE.addEventListener("click", () => this.setState({...this.state, showCode: !this.state.showCode}));
+        Prism.highlightAll();
     }
 
     render() {
         const SHOW_CODE = this.state.showCode;
-        const {BOTTOM_LEFT, BOTTOM_RIGHT, TOP_RIGHT, TOP_LEFT} = JSON.parse(localStorage.getItem("radius"));
+        let code;
 
-        const code = `.app {\n\tborder-top-left-radius: ${TOP_LEFT};
+        if (JSON.parse(localStorage.getItem("radius"))) {
+            let {BOTTOM_LEFT, BOTTOM_RIGHT, TOP_RIGHT, TOP_LEFT} = JSON.parse(localStorage.getItem("radius"));
+            code = `.app {\n\tborder-top-left-radius: ${TOP_LEFT};
             \n\tborder-top-right-radius: ${TOP_RIGHT};
             \n\tborder-bottom-right-radius: ${BOTTOM_RIGHT};
             \n\tborder-bottom-left-radius: ${BOTTOM_LEFT};\n}`;
+        }
+
 
         return(
             <div className="code" style={{transform: (SHOW_CODE) ? "translateY(0)" : "translateY(100%)"}}>
-            <SyntaxHighlighter language="css" style={dracula} showLineNumbers={true} showInlineLineNumbers={true}>
-                {code}
-            </SyntaxHighlighter>
-            <Button role="copy-code" state="normal" ><span className="icon icon-mooncopy"></span> Copy Code</Button>
+                <pre className="line-numbers language-css ">
+                    <code className="language-css">
+                        {code}
+                    </code>
+                </pre>
+                <Button role="copy-code" state="normal" ><span className="icon icon-mooncopy"></span> Copy Code</Button>
             </div>
         )
     }

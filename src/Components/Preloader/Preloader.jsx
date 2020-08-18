@@ -19,6 +19,7 @@ class Preloader extends Component {
             <div className="preloader">
                 <div className="loader">
                     <div className="border" style={{display: (LOADED) ? "none" : "inline-block"}}></div>
+                    Loading.. Please Wait!
                 </div>
                 <div className="pattern"></div>
             </div>
