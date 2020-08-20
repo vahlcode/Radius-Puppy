@@ -7,7 +7,7 @@ import Alert from "../Components/Notification/Alert";
 import Preloader from "../Components/Preloader/Preloader";
 import Logo from "../Assets/Images/logo.svg";
 import "../Assets/Icons/icon.css";
-import {TimelineLite, Linear} from "gsap";
+import {gsap, Linear} from "gsap";
 import { withRouter } from "react-router-dom";
 
 class App extends React.Component {
@@ -17,7 +17,7 @@ class App extends React.Component {
       showAlert: false
     }
 
-    this.tl = new TimelineLite({delay: 0.5});
+    this.tl = gsap.timeline({delay: 0.5});
     this.copyColor = this.copyColor.bind(this);
   }
 

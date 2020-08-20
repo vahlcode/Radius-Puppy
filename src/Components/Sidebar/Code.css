@@ -8,6 +8,7 @@
     padding: 150px 20px 20px 20px;
     background: var(--background-color-light-transparent);
     backdrop-filter: blur(20px);
+    --webkit-backdrop-filter: blur(20px);
     z-index: 4;
     transition: .5s;
 }

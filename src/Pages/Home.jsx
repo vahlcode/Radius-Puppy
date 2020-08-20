@@ -10,7 +10,7 @@ class Home extends Component{
             <section className="hero">
                 <h1>Easily Create Beautiful and Decorative Elements For Your Applications with Border Radius.</h1>
                 <Link to="/app">
-                    <Button onClick={this.goToApp}>Get Started</Button>
+                    <Button>Get Started</Button>
                 </Link>
                 <div className="social-media">
                     <span>Made with <span className="icon icon-moonheart"></span> by Valentine Elum</span>

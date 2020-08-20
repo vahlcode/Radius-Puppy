@@ -4,7 +4,7 @@ aside {
     right: 0;
     height: 40vh;
     width: var(--sidebars-width);
-    padding: 50px 30px 50px 30px;
+    padding: 50px 30px 150px 30px;
     background: var(--background-color-light);
     z-index: 1;
     overflow-x: hidden;

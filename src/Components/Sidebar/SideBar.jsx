@@ -25,7 +25,7 @@ class Sidebar extends Component{
                 </div>
                 <div className="app-size">
                     <span className="info">
-                        This attributes are for prototypes only. They are not included in the final generated code.
+                        These attributes are for prototypes only. They are not included in the final generated code.
                     </span>
                     <div className="input-group">
                         <h6>Element height</h6>
