@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/Radius-Puppy/static/css/main.bad33849.chunk.css",
+    "main.css": "/Radius-Puppy/static/css/main.c0776d46.chunk.css",
     "main.js": "/Radius-Puppy/static/js/main.2ddfaaa9.chunk.js",
     "main.js.map": "/Radius-Puppy/static/js/main.2ddfaaa9.chunk.js.map",
     "runtime-main.js": "/Radius-Puppy/static/js/runtime-main.e4f94c91.js",
@@ -9,10 +9,10 @@
     "static/js/2.952853b0.chunk.js": "/Radius-Puppy/static/js/2.952853b0.chunk.js",
     "static/js/2.952853b0.chunk.js.map": "/Radius-Puppy/static/js/2.952853b0.chunk.js.map",
     "index.html": "/Radius-Puppy/index.html",
-    "precache-manifest.992cf915b241db4551e3add54c71140b.js": "/Radius-Puppy/precache-manifest.992cf915b241db4551e3add54c71140b.js",
+    "precache-manifest.cbd57c78b269a03549786ee60bdf2f19.js": "/Radius-Puppy/precache-manifest.cbd57c78b269a03549786ee60bdf2f19.js",
     "service-worker.js": "/Radius-Puppy/service-worker.js",
     "static/css/2.2b084824.chunk.css.map": "/Radius-Puppy/static/css/2.2b084824.chunk.css.map",
-    "static/css/main.bad33849.chunk.css.map": "/Radius-Puppy/static/css/main.bad33849.chunk.css.map",
+    "static/css/main.c0776d46.chunk.css.map": "/Radius-Puppy/static/css/main.c0776d46.chunk.css.map",
     "static/js/2.952853b0.chunk.js.LICENSE.txt": "/Radius-Puppy/static/js/2.952853b0.chunk.js.LICENSE.txt",
     "static/media/Preloader.css": "/Radius-Puppy/static/media/bg-pattern.23730afa.svg",
     "static/media/Home.css": "/Radius-Puppy/static/media/bg.31395837.svg",
@@ -23,7 +23,7 @@
     "static/js/runtime-main.e4f94c91.js",
     "static/css/2.2b084824.chunk.css",
     "static/js/2.952853b0.chunk.js",
-    "static/css/main.bad33849.chunk.css",
+    "static/css/main.c0776d46.chunk.css",
     "static/js/main.2ddfaaa9.chunk.js"
   ]
 }

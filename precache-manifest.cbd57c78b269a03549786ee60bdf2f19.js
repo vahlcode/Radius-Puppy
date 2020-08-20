@@ -1,6 +1,6 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "e615917037416295971234877499eee0",
+    "revision": "0230adf481187b9e6a417a35d4fc60b6",
     "url": "/Radius-Puppy/index.html"
   },
   {
@@ -8,8 +8,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/Radius-Puppy/static/css/2.2b084824.chunk.css"
   },
   {
-    "revision": "423ef842498439a67211",
-    "url": "/Radius-Puppy/static/css/main.bad33849.chunk.css"
+    "revision": "7bfb6c9dcf45839c3932",
+    "url": "/Radius-Puppy/static/css/main.c0776d46.chunk.css"
   },
   {
     "revision": "5b35e6ac151e2526ed18",
@@ -20,7 +20,7 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/Radius-Puppy/static/js/2.952853b0.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "423ef842498439a67211",
+    "revision": "7bfb6c9dcf45839c3932",
     "url": "/Radius-Puppy/static/js/main.2ddfaaa9.chunk.js"
   },
   {
