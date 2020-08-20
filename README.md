@@ -1,8 +1,14 @@
 # Radius-Puppy
 
+![alt text](https://radius-puppy.netlify.app/Screenshot.png "Screenshot")
+
 This tool helps you create beautiful css border radius for your website fast and free.
 
-[Use Now](https://radius-puppy.netlify.app/app)
+[Use Now](https://radius-puppy.netlify.app/)
+
+# How to use
+
+Visit [https://radius-puppy.netlify.app/] and click on the "Get Started" button, it will tage you to the app page, from there you can create beautiful border radius and grab the code.
 
 # Contribution
 
