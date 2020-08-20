@@ -5,9 +5,10 @@ This tool helps you create beautiful css border radius for your website fast and
 [Use Now](https://radius-puppy.netlify.app/app)
 
 # Contribution
-# Lincense
 
 To contribute to this project, clone this repository and make a pr.
+
+# Lincense
 
 MIT License
 
