@@ -8,19 +8,19 @@ class Sidebar extends Component{
                 <div className="radius-slider">
                     <div className="input-group">
                         <h6>Top left</h6>
-                        <input type="range" min="0" max="1000" step="0.5" id="top-left"/>
+                        <input type="range" min="0" max="100" step="0.5" id="top-left"/>
                     </div>
                     <div className="input-group">
                         <h6>Top right</h6>
-                        <input type="range" min="0" max="1000" step="0.5" id="top-right"/>
+                        <input type="range" min="0" max="100" step="0.5" id="top-right"/>
                     </div>
                     <div className="input-group">
                         <h6>Bottom right</h6>
-                        <input type="range" min="0" max="1000" step="0.5" id="bottom-right"/>
+                        <input type="range" min="0" max="100" step="0.5" id="bottom-right"/>
                     </div>
                     <div className="input-group">
                         <h6>Bottom left</h6>
-                        <input type="range" min="0" max="1000" step="0.5" id="bottom-left"/>
+                        <input type="range" min="0" max="100" step="0.5" id="bottom-left"/>
                     </div>
                 </div>
                 <div className="app-size">

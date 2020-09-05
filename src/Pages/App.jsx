@@ -28,17 +28,17 @@ class App extends React.Component {
     const Loader = document.querySelector(".loader");
     setTimeout(() => {
       this.tl.fromTo(Preloader, 1.2, {xPercent: 0, ease: Linear}, {xPercent: 100, ease: Linear})
-        .to(Loader, 1.2, {css: {display: "none"}}, .1)
         .from(Main, 1.2, {x: -window.innerWidth, ease: Linear}, 1)
         .from(Sidebar, 1.2, {x: window.innerWidth, ease: Linear}, 2)
+        .to(Loader, 1.2, {css: {display: "none"}}, .1)
     }, 1500)
 
     if (!localStorage.getItem("radius")) {
       localStorage.setItem("radius", JSON.stringify({
-        TOP_LEFT: "100px",
-        TOP_RIGHT: "100px",
-        BOTTOM_RIGHT: "100px", 
-        BOTTOM_LEFT: "100px"
+        TOP_LEFT: "100%",
+        TOP_RIGHT: "40%",
+        BOTTOM_RIGHT: "100%", 
+        BOTTOM_LEFT: "10%"
       }))
     }
 
@@ -51,7 +51,7 @@ class App extends React.Component {
 
     //MAKING THE CHANGES TO THE ELEMENT USING EVENT LISTENERS ON THE SLIDES
     TOP_LEFT_RANGE.addEventListener("input", (e) => {
-      let size = Math.floor(e.target.value) + "px";
+      let size = Math.floor(e.target.value) + "%";
       document.documentElement.style.setProperty("--border-top-left-radius", size);
 
       const SIZES = JSON.parse(localStorage.getItem("radius"));
@@ -69,7 +69,7 @@ class App extends React.Component {
     })
 
     TOP_RIGHT_RANGE.addEventListener("input", (e) => {
-      let size = Math.floor(e.target.value) + "px";
+      let size = Math.floor(e.target.value) + "%";
       document.documentElement.style.setProperty("--border-top-right-radius", size);
       
       const SIZES = JSON.parse(localStorage.getItem("radius"));
@@ -86,7 +86,7 @@ class App extends React.Component {
     })
 
     BOTTOM_LEFT_RANGE.addEventListener("input", (e) => {
-      let size = Math.floor(e.target.value) + "px";
+      let size = Math.floor(e.target.value) + "%";
       document.documentElement.style.setProperty("--border-bottom-left-radius", size);
       
       const SIZES = JSON.parse(localStorage.getItem("radius"));
@@ -103,7 +103,7 @@ class App extends React.Component {
     })
 
     BOTTOM_RIGHT_RANGE.addEventListener("input", (e) => {
-      let size = Math.floor(e.target.value) + "px";
+      let size = Math.floor(e.target.value) + "%";
       document.documentElement.style.setProperty("--border-bottom-right-radius", size);
       
       const SIZES = JSON.parse(localStorage.getItem("radius"));
